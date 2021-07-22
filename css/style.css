@@ -1,6 +1,90 @@
-html, body
+:root
 {
-    padding: 0;
-    margin: 0;
+    /*Colors*/
+    --main-colour: #FF4C4C;
+    --first-bg-colour: #575757;
+    --secound-bg-colour: #D9D9D9;
 }
 
+html, body
+{
+    box-sizing: border-box;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: Bahnschrift;
+    scroll-behavior: smooth;
+}
+
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: auto;
+    width: 100%;
+}
+
+nav
+{
+    background-color: var(--first-bg-colour);
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 100px;
+}
+
+.nav-links 
+{
+    list-style: none;
+}
+
+.nav-links li
+{
+    display: inline-block;
+    padding: 0px 10px;
+}
+
+.nav-links li a
+{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.25s ease-out;
+}
+
+.nav-links li a:hover
+{
+    color: var(--main-colour);
+}
+
+#Home
+{
+    background-color: var(--first-bg-colour);
+    height: 100%;
+}
+
+#About-me
+{
+    background-color: var(--secound-bg-colour);
+    height: 100%;
+}
+
+#History
+{
+    background-color: var(--first-bg-colour);
+    height: 100%;
+}
+
+#Portfolio
+{
+    background-color: var(--secound-bg-colour);
+    height: 100%;
+}
+
+#Contact
+{
+    background-color: var(--first-bg-colour);
+    height: 100%;
+}
