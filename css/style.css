@@ -63,6 +63,7 @@ nav
 {
     background-color: var(--first-bg-colour);
     height: 100%;
+    overflow: hidden;
 }
 
 #About-me
@@ -87,4 +88,14 @@ nav
 {
     background-color: var(--first-bg-colour);
     height: 100%;
+}
+
+.bubble
+{
+    width: 1000px;
+    height: 1000px;
+    border-radius: 100%;
+    margin-top: 20%;
+    margin-left: 80%;
+    background-color: #FF4C4C;
 }
