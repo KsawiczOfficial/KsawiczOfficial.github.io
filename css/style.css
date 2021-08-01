@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
 :root
 {
     /*Colors*/
@@ -8,94 +10,90 @@
 
 html, body
 {
-    box-sizing: border-box;
-    height: 100%;
-    padding: 0;
     margin: 0;
-    font-family: Bahnschrift;
-    scroll-behavior: smooth;
-}
-
-header
-{
-    position: fixed;
-    top: 0;
-    left: 0;
-    margin: auto;
-    width: 100%;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+    height: 100%;
 }
 
 nav
 {
     background-color: var(--first-bg-colour);
     display: flex;
-    list-style: none;
-    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    justify-content: space-around;
     align-items: center;
-    padding: 15px 100px;
+    padding: 1vh;
 }
 
-.nav-links 
+nav ul
 {
     list-style: none;
 }
 
-.nav-links li
+nav li
 {
-    display: inline-block;
-    padding: 0px 10px;
+    display: inline;
 }
 
-.nav-links li a
+nav li a
 {
+    font-weight: bold;
     text-decoration: none;
-    color: #fff;
-    font-size: 18px;
-    transition: color 0.25s ease-out;
+    color: white;
+    padding: 5px;
+    transition: 0.25s;
+    animation-name: navbar-fade-in;
+    animation-duration: 1s;
 }
 
-.nav-links li a:hover
+nav li a:hover
 {
     color: var(--main-colour);
 }
 
 #Home
 {
-    background-color: var(--first-bg-colour);
     height: 100%;
+    background-color: var(--first-bg-colour);
     overflow: hidden;
 }
 
-#About-me
+#Home .main-text
 {
+    margin-top: 50vh;
+    margin-left: 10vw;
+}
+
+#Home .main-text span
+{
+    color: white;
+    font-size: 50px;
+}
+
+#Home .main-text .main-ksawier
+{
+    color: var(--main-colour);
+    font-size: 75px;
+    font-weight: bold;
+}
+
+#Home .main-text .main-description-me
+{
+    font-size: medium;
+}
+
+#About
+{
+    height: 100%;
     background-color: var(--secound-bg-colour);
-    height: 100%;
 }
 
-#History
+@keyframes navbar-fade-in
 {
-    background-color: var(--first-bg-colour);
-    height: 100%;
-}
-
-#Portfolio
-{
-    background-color: var(--secound-bg-colour);
-    height: 100%;
-}
-
-#Contact
-{
-    background-color: var(--first-bg-colour);
-    height: 100%;
-}
-
-.bubble
-{
-    width: 1000px;
-    height: 1000px;
-    border-radius: 100%;
-    margin-top: 20%;
-    margin-left: 80%;
-    background-color: #FF4C4C;
+    from {transform: translateX(-20px);}
+    to {transform: translateX(0px);}
 }
